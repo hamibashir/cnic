@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[
+    paperwidth=210mm,
+    paperheight=297mm,
+    margin=0mm
+]{geometry}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{tikzpicture}[
+    remember picture,
+    overlay,
+    x=1mm,
+    y=1mm
+]
+
+% =========================================================
+% FINAL ENHANCED A4 CNIC LAYOUT
+%
+% A4:              210 mm × 297 mm
+%
+% Card Width:       90.00 mm
+% Card Height:      56.78 mm
+%
+% Left Margin:      11.00 mm
+% Middle Gap:        8.00 mm
+% Right Margin:     11.00 mm
+%
+% Top Margin:       16.94 mm
+% Row Gap:          12.00 mm
+% Bottom Margin:    16.94 mm
+%
+% NOTE:
+% Card is approximately 5% larger than CR80 size.
+% =========================================================
+
+
+% ---------------- ROW 1 ----------------
+
+\node[anchor=north west, inner sep=0pt]
+at ([xshift=11mm,yshift=-16.94mm]current page.north west)
+{\includegraphics[width=90mm,height=56.78mm]{front.jpg}};
+
+\node[anchor=north west, inner sep=0pt]
+at ([xshift=109mm,yshift=-16.94mm]current page.north west)
+{\includegraphics[width=90mm,height=56.78mm]{back.jpg}};
+
+
+% ---------------- ROW 2 ----------------
+
+\node[anchor=north west, inner sep=0pt]
+at ([xshift=11mm,yshift=-85.72mm]current page.north west)
+{\includegraphics[width=90mm,height=56.78mm]{front.jpg}};
+
+\node[anchor=north west, inner sep=0pt]
+at ([xshift=109mm,yshift=-85.72mm]current page.north west)
+{\includegraphics[width=90mm,height=56.78mm]{back.jpg}};
+
+
+% ---------------- ROW 3 ----------------
+
+\node[anchor=north west, inner sep=0pt]
+at ([xshift=11mm,yshift=-154.50mm]current page.north west)
+{\includegraphics[width=90mm,height=56.78mm]{front.jpg}};
+
+\node[anchor=north west, inner sep=0pt]
+at ([xshift=109mm,yshift=-154.50mm]current page.north west)
+{\includegraphics[width=90mm,height=56.78mm]{back.jpg}};
+
+
+% ---------------- ROW 4 ----------------
+
+\node[anchor=north west, inner sep=0pt]
+at ([xshift=11mm,yshift=-223.28mm]current page.north west)
+{\includegraphics[width=90mm,height=56.78mm]{front.jpg}};
+
+\node[anchor=north west, inner sep=0pt]
+at ([xshift=109mm,yshift=-223.28mm]current page.north west)
+{\includegraphics[width=90mm,height=56.78mm]{back.jpg}};
+
+\end{tikzpicture}
+
+\end{document}
